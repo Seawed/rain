@@ -1,0 +1,33 @@
+
+
+
+@keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
+    from { left: 0px; }             /* от: left: 0px */
+    to { left: calc(100% - 99%); } /* до: left: 100%-50px */
+	from {
+            margin-top: 0px;
+        }
+        to {
+            margin-top: 900px;
+        }
+  }
+
+div {
+	margin-left: 5px;
+	animation: go-left-right 3s infinite;
+	position: relative;
+    border-bottom: 10px solid #43425f;
+    width: 12px;
+    height: 55px;
+	float: left;
+	overflow: hidden;
+	transform: rotate(180deg);
+	border-radius: 0 50% 50% 50%;
+}
+.tear {
+  width: 5px;
+  height: 5px;
+  border-radius: 0 50% 50% 50%;
+  border: 3px solid black;
+  margin-top: 20px;
+}
